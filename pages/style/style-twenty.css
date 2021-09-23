@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 15px;
+  display: flex;
+  background: rgb(193, 214, 226);
+}
+
+#cardboard {
+  margin: auto;
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: 33%;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: 0.3s;
+  position: relative;
+  border: 2px solid;
+  border-radius: 10px;
+}
+.memory-card:active {
+  transform: scale(0.97);
+}
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  background: rgb(76, 162, 211);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.front-face {
+  background-color: rgb(238, 248, 253);
+  transform: rotateY(180deg);
+}
+
+.teste{
+  margin-left:20px;
+  
+ 
+  
+}
+.botaoR{
+  margin-top: 15px;
+  width:150px;
+  height: 50px;  
+  padding: .2rem 1rem;
+  background-color: rgb(204, 72, 90);
+  border-radius: 20px;
+  color:white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.botao16 a,
+.botao12 a{
+  text-decoration: none;
+  color:white;
+}
+
+.botao16{
+  display: flex;
+  margin-top: 15px;
+  width:150px;
+  height: 50px;  
+  padding: .7rem 1.8rem;
+  background-color: rgb(145, 72, 204);
+  border-radius: 20px;
+  color:white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.botao12{
+  display: flex;
+  margin-top: 15px;
+  width:150px;
+  height: 50px;  
+  padding: .7rem 1.8rem;
+  background-color: rgb(72, 204, 160);
+  border-radius: 20px;
+  color:white;
+  font-size: 20px;
+  cursor: pointer;
+}
